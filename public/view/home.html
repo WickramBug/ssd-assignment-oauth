@@ -1,0 +1,33 @@
+<ul class="nav justify-content-center mt-3">
+    <li class="nav-item">
+        <form class="nav-link">
+            <button class="btn btn-link" type="button" ng-click="logout()">Logout</button>
+        </form>
+    </li>
+</ul>
+
+<div class="container my-3">
+    <div class="row my-5">
+        <div class="col-md-6 mx-auto rounded">
+            <form class="col-md p-5 rounded border shadow">
+                <div class="form-group">
+                    <label for="to">To</label>
+                    <input class="form-control" type="text" name="to" id="to" ng-model="mail.to">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input class="form-control" type="text" name="subject" id="subject" ng-model="mail.subject">
+                </div>
+                <div class="form-group">
+                    <label for="body">Body</label>
+                    <textarea class="form-control" rows="6" name="body" id="body" ng-model="mail.body"></textarea>
+                </div>
+                <button type="reset" class="btn btn-secondary">Delete</button>
+                <button type="submit" class="btn btn-primary" ng-click="sendMail()">Send</button>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="col-lg-12 col-sm-12 col-xs-12 alert alert-success" ng-show="successMessagebool">
+        <strong>{{successMessage}}</strong>
+    </div> -->
+</div>
